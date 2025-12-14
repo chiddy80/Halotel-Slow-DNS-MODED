@@ -1,0 +1,15 @@
+[Unit]
+Description= By esimfreegb
+Documentation=t.me/esimfreegb
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/etc/slowdns
+ExecStart=/etc/slowdns/sldns-server -udp :5300 -privkey-file /etc/slowdns/server.key -mtu 512 $nameserver 127.0.0.1:69
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
