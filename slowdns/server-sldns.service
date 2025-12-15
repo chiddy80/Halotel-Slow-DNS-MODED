@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/etc/slowdns
-ExecStart=/etc/slowdns/sldns-server -udp :5300 -privkey-file /etc/slowdns/server.key -mtu 512 $nameserver 127.0.0.1:69
+ExecStart=/etc/slowdns/sldns-server -udp :5300 -privkey-file /etc/slowdns/server.key -mtu 512 ns.slowchiddy.shop 127.0.0.1:69
 Restart=always
 RestartSec=3
 
