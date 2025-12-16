@@ -17,7 +17,7 @@ CF_KEY=9efe3b4a8d8c7dc0be201baf197520643e0f7  # Your Cloudflare API key
 
 # Custom subdomain patterns as you requested
 SUB_DOMAIN=uk.vpschiddy.icu # Fixed subdomain instead of random
-NS_DOMAIN=uk-slowdns.vpschiddy.icu  # Fixed NS domain instead of random
+NS_DOMAIN=ns.vpschiddy.icu  # Fixed NS domain instead of random
 # =============================
 
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
