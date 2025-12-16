@@ -11,13 +11,13 @@ sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-x0-9 | head -c5)
 
 # ==== YOUR CUSTOM VALUES ====
-DOMAIN=de1.vpschiddy.icu  # Your domain
+DOMAIN=uk.vpschiddy.icu  # Your domain
 CF_ID=kamoterashid22@gmail.com  # Your Cloudflare email
 CF_KEY=9efe3b4a8d8c7dc0be201baf197520643e0f7  # Your Cloudflare API key
 
 # Custom subdomain patterns as you requested
-SUB_DOMAIN=de1.vpschiddy.icu # Fixed subdomain instead of random
-NS_DOMAIN=ns.vpschiddy.icu  # Fixed NS domain instead of random
+SUB_DOMAIN=uk.vpschiddy.icu # Fixed subdomain instead of random
+NS_DOMAIN=uk-slowdns.vpschiddy.icu  # Fixed NS domain instead of random
 # =============================
 
 echo "IP=""$SUB_DOMAIN" >> /var/lib/crot/subdomain.conf
